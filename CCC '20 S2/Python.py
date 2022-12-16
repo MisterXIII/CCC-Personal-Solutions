@@ -1,6 +1,7 @@
 import math
 import sys
 
+// Takes in prerequesite information
 rows = int(input())
 columns = int(input())
 
@@ -11,6 +12,8 @@ for i in range(rows):
 
 hops = [rooms[0][0]]
 vis = [[False] * columns for j in range(rows)]
+
+// Goes through all of the rooms using a breadth first approach
 
 while len(hops) > 0:
     f1 = 1
